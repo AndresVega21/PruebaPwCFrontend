@@ -1,0 +1,7 @@
+<div *ngIf="canLoad">
+    <h3>{{comentario.titulo}}</h3>
+    <h5>{{comentario.creador}}</h5>
+    <h5>{{comentario.descripcion}}</h5>
+    <h5>{{comentario.fecha | date:'dd/MM/yyyy' }}</h5>
+    <button class="btn btn-success float-right"  (click)="volver()">Volver </button>
+</div>
